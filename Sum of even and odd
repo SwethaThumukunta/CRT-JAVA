@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int i;
+        int sum_e=0,sum_o=0;
+        int a[]=new int[n];
+        for(i=0;i<n;i++){
+            a[i]=s.nextInt();
+        }
+        for(i=0;i<n;i++){
+        if(a[i]%2==0){
+            sum_e=sum_e+a[i];
+        }
+        else{
+            sum_o=sum_o+a[i];
+        }
+        }
+        System.out.println(sum_o);
+        System.out.println(sum_e);
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

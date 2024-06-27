@@ -1,0 +1,33 @@
+import java.util.*;
+class MergeSort{
+public static void main(String args[]){
+Scanner s=new Scanner(System.in);
+int n=s.nextInt();
+int i,j;
+int a[]=new int[n];
+for(i=0;i<n;i++){
+a[i]=s.nextInt();
+}
+int m=s.nextInt();
+int b[]=new int[m];
+for(j=0;j<m;j++){
+b[j]=s.nextInt();
+}
+int p=m+n;
+int count=0;
+int c[]=new int[p];
+for(i=0;i<n;i++){
+c[i]=a[i];
+count++;
+}
+for(j=0;j<m;j++){
+c[count++]=b[j];
+}
+Arrays.sort(c);
+for(i=0;i<p;i++){
+System.out.print(c[i]+" ");
+}
+}
+}
+
+

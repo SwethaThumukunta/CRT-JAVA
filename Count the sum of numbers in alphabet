@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        String s1=s.next();
+        int sum=0;
+        for(char ch:s1.toCharArray()){
+            if(Character.isDigit(ch)){
+                int digit=Character.getNumericValue(ch);
+              sum=sum+digit;  
+            }
+        }
+        System.out.println(+sum);
+    }
+}
